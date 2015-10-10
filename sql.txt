@@ -1,0 +1,16 @@
+Insertar permisos:
+INSERT INTO digiarch.permisos (escritura, lectura, editar, borrar) VALUES ('1', '1', '1', '1');
+
+
+Insertar Nuevo Usuario (user)
+INSERT INTO digiarch.user (iduser, idpermiso, login, passwd, nivel, estado) VALUES ('1000', '1', 'edgar', 'edgar', '1', '1');
+
+Insertar nuevo personal
+INSERT INTO digiarch.personal (idpersonal, nombre, apellidos, dni, sexo, telefono, direccion, obs) VALUES ('1', 'Edgar', 'Apaza Choque', '400023528', 'Masculino', '051 622543', 'Jr. Colombia 135 Puno', 'Maestria obs');
+
+
+Insertar imagenes
+INSERT INTO `digiarch`.`imagenes` (`idimagen`, `ruta`, `directorio`) VALUES ('1', '../img/21003/21003.jpg', '21003');
+
+InsertAR Documento
+INSERT INTO `digiarch`.`documento` (`iddocum`, `idproy`, `idimagen`, `idinvol`, `codigo`, `dia`, `mes`, `anio`, `nombres`, `apellidos`, `asunto`, `direccion`, `cantfolios`, `obs`, estado) VALUES ('1', '1', '1', '1', '21003', '20', 'Dicembre', '1989', 'Victoriano', 'Cahuire Quispe', 'Regularizacion de habilitacion urbana', 'Urb. 9 de Octubre', '6', 'ninguna obs',1);
